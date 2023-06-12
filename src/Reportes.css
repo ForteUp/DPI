@@ -1,72 +1,428 @@
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&family=Noto+Sans:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap');
+@font-face {
+    font-family: "Laurentian Std";
+    src: url("./fonts/laurentian-std.otf");
+}
+
+@font-face {
+    font-family: "Seravek";
+    src: url("./fonts/seravek.ttf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body-reportes{
-    width: 612px;
-    height: 792px;
-    padding: 36px;
-    border-style: solid;
+.Reportes-general{
+    height: 3508px;
+    width: 2480px;
+    position: relative;
+    padding: 102px 81px 102px 80px;
 }
 
-.logos-reportes{
-    padding: 0px;
-    height: 50px;
-    width: 552px;
-    margin: 0px;
+.Reportes-margen{
+    width: 2319px;
+    height: 3304px;
+}
+
+.TopInfo-general{
+    width: 861px;
+    height: 221.22px;
     display: flex;
     flex-direction: row;
 }
 
-.logo-up{
-    width: 175px;
-    height: 50px;
-    margin: 0px;
+.TopInfo-logo{
+    width: 200px;
+    height: 221.22px;
 }
 
-.text-logos{
-    width: 190px;
-    height: 50px;
-    margin: 0px;
-    flex-direction: column;
+.TopInfo-texto{
+    margin-left: 4px;
+    margin-top: 104px;
 }
-
-.txt-logo1{
-    height: 13px;
-    width: 182px;
-    font-family: 'Noto Sans', sans-serif;
+.TopInfo-smart{
+    width: 154px;
+    height: 51px;
+    font-family: "Laurentian Std";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 50px;
+    line-height: 51px;
+    color: #000000;
+    margin-bottom: 9px;
+}
+.TopInfo-titulo{
+    width: 657px;
+    height: 52px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.InfoAlumno-Caracter-general{
+    height: 412.94px;
+    width: 2240px;
+    margin-left: 79px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 105.78px;
+}
+.InfoAlumno-general{
+    width: 1012px;
+    height: 412.94px;
+    margin-right: 203px;
+}
+
+.InfoAlumno-titulo{
+    width: 778px;
+    height: 131.08px;
+    font-family: "Laurentian Std";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    color: #B28A52;
+    margin-left: 163px;
+}
+
+.InfoAlumno-nombre-sexo-general{
+    width: 1012px;
+    height: 66.91px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.InfoAlumno-nombre-general{
+    height: 626px;
+    height: 66.91px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.InfoAlumno-nombre{
+    height: 49px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-nombre-nombrealumno{
+    height: 49px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-sexo-general{
+    width: 281px;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+}
+
+.InfoAlumno-sexo{
+    height: 49px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-sexo-sexoalumno{
+    height: 49px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-carrera-general{
+    width: 1012px;
+    height: 66.91px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40.69px;
+}
+
+.InfoAlumno-carrera{
+    height: 66.91px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-carrera-carreraAlumno{
+    height: 66.91px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-id-fecha{
+    height: 66.91px;
+    width: 1012px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40.52px;
+}
+
+.InfoAlumno-id-general{
+    height: 66.91px;
+    width: 202px;
+    margin-right: 56px;
+    display: flex;
+    flex-direction: row;
+}
+
+.InfoAlumno-id{
+    height: 66.91px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-id-idAlumno{
+    height: 66.91px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.InfoAlumno-fecha-general{
+    height: 49px;
+    width: 305px;
+    display: flex;
+    flex-direction: row;
+}
+
+.InfoAlumno-fecha{
+    width: 105px;
+    height: 49px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+    margin-right: 11px;
+}
+
+.InfoAlumno-fecha-fecha{
+    width: 189px;
+    height: 49px;
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-align: center;
+}
+
+.Caracter-general{
+    width: 1025px;
+    height: 407px;
+    margin-top: 5.94px;
+    background-color: #EFEFEF;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.Caracter-info-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0px;
+    gap: 59px;
+    width: 956px;
+    height: 407px;
+    margin-right: 45px;
+    background-color: #EFEFEF;
+    border-radius: 50px 0px 0px 50px;
 }
 
-.txt-logo2{
-    width: 160px;
-    height: 10px;
-    font-family: 'Noto Sans', sans-serif;
+.Caracter-info{
+    width: 563px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #EFEFEF;
+    margin-left: 24px;
+}
+
+.Caracter-info-tipo{
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #EFEFEF;
+    margin-bottom: 30px;
+}
+
+.Caracter-info-descripcion{
+    font-family: "Seravek";
     font-style: normal;
     font-weight: 400;
-    font-size: 9px;
-    line-height: 12px;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #EFEFEF;
 }
 
-.txt-logo3{
-    width: 182px;
-    height: 11px;
-    font-family: 'Khula', sans-serif;
+.Caracter-img{
+    width: 334px;
+    height: 334px;
+    border-radius: 50px 0px 0px 50px;   
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: #EFEFEF;
+}
+
+.ValoresAlumno-general{
+    width: 2319px;
+    height: 833px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 3px 50px 3px;
+    align-items: center;
+}
+
+.ValoresAlumno-titulo{
+    width: 612px;
+    height: 96px;
+    font-family: "Laurentian Std";
     font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 16px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    color: #B28A52;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.logo-asesoria{
-    width: 135px;
-    height: 50px;
-    margin: 0px;
+.ValoresAlumno-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 60px;
+    width: 2319px;
+    height: 317px;
+    margin-top: 30px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ValoresAlumno-top-conocimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 530px;
+    height: 317px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Top-conocimiento-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 530px;
+    height: 150px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Conocimiento-titulo-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 333px;
+    height: 60px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Conocimiento-titulo-imgGeneral{
+    width: 60px;
+    height: 60px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Conocimiento-titulo-img{
+    width: 55px;
+    height: 45px;
 }

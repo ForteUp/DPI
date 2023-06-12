@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "Laurentian Std";
+  src: url("./fonts/laurentian-std.otf");
+}
+
+@font-face {
+  font-family: "Seravek";
+  src: url("./fonts/seravek.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .App{
   display: flex;
   justify-content: center;
+  background-color: black;
 }
