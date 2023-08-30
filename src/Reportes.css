@@ -420,9 +420,774 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Conocimiento-titulo-img{
     width: 55px;
     height: 45px;
+}
+
+.Conocimiento-titulo{
+    width: 253px;
+    height: 49px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Conocimiento-quantity-general{
+    width: 109.76px;
+    height: 150px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.Conocimiento-grafic{
+    width: 109.76px;
+    height: 109.76px;
+}
+
+.Conocimiento-quantity{
+    width: 87.8px;
+    height: 40.24px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+}
+
+.Top-conocimiento-info{
+    width: 528px;
+    height: 147px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ValoresAlumno-top-material{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 530px;
+    height: 317px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Top-material-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 530px;
+    height: 150px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Material-titulo-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 373px;
+    height: 98px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Material-titulo-imgGeneral{
+    width: 60px;
+    height: 60px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Material-titulo-img{
+    width: 25px;
+    height: 45px;
+}
+
+.Material-titulo{
+    width: 293px;
+    height: 98px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Material-quantity-general{
+    width: 109.76px;
+    height: 150px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.Material-grafic{
+    width: 109.76px;
+    height: 109.76px;
+}
+
+.Material-quantity{
+    width: 87.8px;
+    height: 40.24px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+}
+
+.Top-material-info{
+    width: 528px;
+    height: 147px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ValoresAlumno-top-arte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 530px;
+    height: 317px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.Top-arte-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 530px;
+    height: 150px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Arte-titulo-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 304px;
+    height: 98px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Arte-titulo-imgGeneral{
+    width: 60px;
+    height: 60px;  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Arte-titulo-img{
+    width: 50px;
+    height: 49.73px;
+}
+
+.Arte-titulo{
+    width: 224px;
+    height: 98px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Arte-quantity-general{
+    width: 109.76px;
+    height: 150px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.Arte-grafic{
+    width: 109.756px;
+    height: 109.756px;
+}
+
+.Arte-quantity{
+    width: 87.8px;
+    height: 40.24px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+}
+
+.Top-arte-info{
+    width: 528px;
+    height: 147px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.ValoresAlumno-top-ayuda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;   
+    gap: 20px;
+    width: 530px;
+    height: 317px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.Top-ayuda-top{
+    display: flex;
+    width: 530px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 530px;
+    height: 150px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Ayuda-titulo-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 328.24px;
+    height: 52.25px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Ayuda-titulo-imgGeneral{
+    width: 60px;
+    height: 60px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ayuda-titulo-img{
+    width: 52.25px;
+    height: 52.25px;
+}
+
+.Ayuda-titulo{
+    width: 256px;
+    height: 49px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Ayuda-quantity-general{
+    width: 109.76px;
+    height: 150px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.Ayuda-grafic{
+    width: 109.76px;
+    height: 109.76px;
+}
+
+.Ayuda-quantity{
+    width: 87.8px;
+    height: 40.24px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+}
+
+.Top-ayuda-info{
+    width: 528px;
+    height: 147px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ValoresAlumno-bottom{
+    display: flex;
+    width: 1770px;
+    height: 317px;
+    align-items: center;
+    gap: 90px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-top: 73px;
+}
+
+.ValoresAlumno-bottom-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Bottom-status-top{
+    display: flex;
+    width: 530px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Status-titulo-general{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Status-titulo-img{
+    width: 60px;
+    height: 60px;
+}
+
+.Status-titulo{
+
+    color: #000;
+    font-size: 40px;
+    font-family: "Seravek";
+    font-weight: 700;
+}
+
+.Status-quantity-general{
+    width: 109.756px;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Status-grafic{
+    width: 109.756px;
+    height: 109.756px;
+    flex-shrink: 0;
+    
+}
+
+.Status-quantity{
+    display: flex;
+    width: 61.463px;
+    height: 40.244px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-family: "Seravek";
+}
+
+.Top-Status-info{
+    display: flex;
+    width: 528px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Seravek";
+}
+
+.ValoresAlumno-bottom-calidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Top-calidad-top{
+    display: flex;
+    width: 530px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Calidad-titulo-general{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Calidad-titulo-img{
+    width: 60px;
+    height: 60px;
+}
+
+.Calidad-titulo{
+    color: #000;
+    font-size: 40px;
+    font-family: "Seravek";
+    font-weight: 700;
+}
+
+.Calidad-quantity-general{
+    width: 107.143px;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Calidad-grafic{
+    width: 107.143px;
+    height: 107.143px;
+    flex-shrink: 0;
+}
+
+.Calidad-quantity{
+    display: flex;
+    width: 60.714px;
+    height: 39.286px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-family: "Seravek";
+}
+
+.Top-calidad-info{
+    display: flex;
+    width: 528px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Seravek";
+}
+
+.ValoresAlumno-bottom-salud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Top-salud-top{
+    display: flex;
+    width: 530px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Salud-titulo-general{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Salud-titulo-img{
+    width: 60px;
+    height: 60px;
+}
+
+.Salud-titulo{
+    color: #000;
+    font-size: 40px;
+    font-family: "Seravek";
+    font-weight: 700;
+}
+
+.Salud-quantity-general{
+    width: 109.756px;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Salud-grafic{
+    width: 109.756px;
+    height: 109.756px;
+    flex-shrink: 0;
+}
+
+.Salud-quantity{
+    display: flex;
+    width: 87.805px;
+    height: 40.244px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 30px;
+    font-family: "Seravek";
+}
+
+.Top-salud-info{
+    display: flex;
+    width: 528px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Seravek";
+}
+
+.Caracter-Metodos-general{
+    width: 2315px;
+    height: 569px;
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+}
+
+.Caracter2-general{
+    width: 1089px;
+    height: 569px;
+    flex-shrink: 0;
+    border-radius: 0px 50px 50px 0px;
+    background: #EFEFEF;
+}
+
+.Caracter2-info-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    width: 1059px;
+    height: 569px;
+    margin-right: 28px;
+    margin-left: 2px;
+    background-color: #EFEFEF;
+    border-radius: 0px 50px 50px 0px;
+    flex-shrink: 0;
+}
+
+.Caracter2-info{
+    display: flex;
+    width: 632px;
+    height: 407px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: #EFEFEF;
+}
+
+.Caracter2-info-tipo{
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #EFEFEF;
+    
+}
+
+.Caracter2-info-descripcion{
+    font-family: "Seravek";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #EFEFEF;
+    margin-top: 42px;
+}
+
+.Caracter2-img{
+    width: 334px;
+    height: 334px;
+    border-radius: 0px 50px 50px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #EFEFEF;
+}
+
+.Metodos-general{
+    width: 1163px;
+    height: 568px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Metodos-titulo{
+    color: #B28A52;
+    font-size: 80px;
+    font-family: "Laurentian Std";
+    font-style: normal;
+    font-weight: 400;
+    width: 628px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Metodos-top{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 60px;
 }
