@@ -13,6 +13,21 @@ import Normas from "./img/checkbox-multiple-marked-circle-outline.png";
 import Salud from "./img/heart-multiple-outline.png";
 import Alta from "./img/Alta.png";
 import ImgCaracter2 from "./img/reflexivo-teorico 1.png";
+import Estudio from "./img/estudio1.png";
+import Estudio2 from "./img/estudio2.png";
+import Estudio3 from "./img/estudio3.png";
+import Estudio4 from "./img/estudio4.png";
+import Estudio5 from "./img/estudio5.png";
+import Estudio6 from "./img/estudio6.png";
+import Estudio7 from "./img/estudio7.png";
+import Ayuda1 from "./img/ayuda1.png";
+import Ayuda2 from "./img/ayuda2.png";
+import Ayuda3 from "./img/ayuda8.png";
+import Ayuda4 from "./img/ayuda9.png";
+import Ayuda5 from "./img/ayuda11.png";
+import Velocidad from "./img/alta 1.png";
+import Comprension from "./img/baja 1.png";
+
 
 function Reportes() {
   return (
@@ -209,12 +224,104 @@ function Reportes() {
 
             <div className="Metodos-top">
 
-              <div className="Top-primero-general">
-                
+              <div className="Metodos-frame-general">
+                <img src={Estudio} alt="" className="Frame-img" />
+                <p className="Frame-text" style={{width: "269px"}}>Explorar contenido general</p>
               </div>
+              <div className="Metodos-frame-general">
+                <img src={Estudio2} alt="" className="Frame-img" />
+                <p className="Frame-text" style={{width: "202px"}}>Leer con detenimiento</p>
+              </div>
+              <div className="Metodos-frame-general">
+                <img src={Estudio3} alt="" className="Frame-img" />
+                <p className="Frame-text" style={{width: "296px"}}>Subrayar<br/>Puntos Importantes</p>
+              </div>
+              <div className="Metodos-frame-general">
+                <img src={Estudio4} alt="" className="Frame-img" />
+                <p className="Frame-text" style={{width: "216px"}}>Detectar Ideas</p>
+              </div>
+            </div>
+
+            <div className="Metodos-bottom">
+              <div className="Metodos-frame-general">
+                  <img src={Estudio6} alt="" className="Frame-img" />
+                  <p className="Frame-text" style={{width: "163px"}}>Memorizar contenido</p>
+                </div>
+                <div className="Metodos-frame-general">
+                  <img src={Estudio7} alt="" className="Frame-img" />
+                  <p className="Frame-text" style={{width: "148px"}}>Repetir lo estudiado</p>
+                </div>
+                <div className="Metodos-frame-general">
+                  <img src={Estudio5} alt="" className="Frame-img" />
+                  <p className="Frame-text" style={{width: "182px"}}>Sintetizar la información</p>
+                </div>
             </div>
           </div>
         </div>
+
+        <div className="AreasAyuda-HabilidadesLectura-general">
+          <div className="AreasAyuda-general">
+            <div className="Titulo-general">
+              <h1 className="AreasAyuda-titulo">Areas donde se requiere Ayuda</h1>
+            </div>
+            <div className="AreasAyuda-valores">
+              <div className="Valores-top">
+
+                <div className="Valores-frame">
+                  <img src={Ayuda1} alt="" className="Valores-frame-img" />
+                  <p className="Valores-frame-text">Manejo de tiempo</p>
+                </div>
+
+                <div className="Valores-frame">
+                  <img src={Ayuda2} alt="" className="Valores-frame-img" />
+                  <p className="Valores-frame-text">Manejo de tiempo</p>
+                </div>
+
+                <div className="Valores-frame">
+                  <img src={Ayuda3} alt="" className="Valores-frame-img" />
+                  <p className="Valores-frame-text">Manejo de tiempo</p>
+                </div>
+
+              </div>
+
+              <div className="Valores-bottom">
+
+                <div className="Valores-frame">
+                  <img src={Ayuda4} alt="" className="Valores-frame-img" />
+                  <p className="Valores-frame-text">Manejo de tiempo</p>
+                </div>
+
+                <div className="Valores-frame">
+                  <img src={Ayuda5} alt="" className="Valores-frame-img" />
+                  <p className="Valores-frame-text">Manejo de tiempo</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="HabilidadesLectura">
+            <h1 className="HabilidadesLectura-titulo">Habilidades de Lectura</h1>
+
+            <div className="HabilidadesLectura-velocidad">
+              <div className="Velocidad-texto">
+                <h1 className="Velocidad-titulo">Velocidad</h1>
+                <p className="Velocidad-desc">La velocidad alta es favofable, siempre y cuando , se comprenda lo que el autor estaá transmientdo. Es recomendable intetar leer textos de mayor complejidad. El rango adecuado de palabras por minuto es de 200-300</p>
+              </div>
+              <img src={Velocidad} alt="" className="Velocidad-img" />
+            </div>
+
+            <div className="HabilidadesLectura-comprension">
+              <div className="Comprension-texto">
+                <h1 className="Comprension-titulo">Comprensión</h1>
+                <p className="Comprension-desc">La velocidad alta es favofable, siempre y cuando , se comprenda lo que el autor estaá transmientdo. Es recomendable intetar leer textos de mayor complejidad. El rango adecuado de palabras por minuto es de 200-300</p>
+              </div>
+              <img src={Comprension} alt="" className="Comprension-img" />
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   )
