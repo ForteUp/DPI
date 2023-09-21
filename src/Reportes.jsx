@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./Reportes.css";
 import LogoUp from "./img/LogoUniversidad.png";
 import ImgCaracter from "./img/inalterable 2.png";
@@ -28,10 +28,27 @@ import Ayuda5 from "./img/ayuda11.png";
 import Velocidad from "./img/alta 1.png";
 import Comprension from "./img/baja 1.png";
 
+function useAlumno(){
+  const [alumno, setAlumno] = useState([]);
+
+  useEffect(() => {
+    fetch("json/Alumno.json")
+    .then(response => response.json())
+    .then(datos => {
+      setAlumno(datos);
+    });
+  },[]);
+  
+  return alumno;
+}
 
 function Reportes() {
+
+  const alumno = useAlumno();
+
   return (
     <div className='Reportes-general'>
+      {alumno.map(item => (
       <div className='Reportes-margen'>
 
         <div className="TopInfo-general">
@@ -48,28 +65,33 @@ function Reportes() {
             <div className="InfoAlumno-nombre-sexo-general">
               <div className="InfoAlumno-nombre-general">
                 <p className="InfoAlumno-nombre">Nombre:&nbsp;</p>
-                <p className="InfoAlumno-nombre-nombrealumno">Braulio Ivan Solorio Goméz</p>
+                <p className="InfoAlumno-nombre-nombrealumno">{item.nombre}</p>
               </div>
               <div className="InfoAlumno-sexo-general">
                 <p className="InfoAlumno-sexo">Sexo:&nbsp;</p>
-                <p className="InfoAlumno-sexo-sexoalumno">Masculino</p>
+                <p className="InfoAlumno-sexo-sexoalumno">{item.sexo}</p>
               </div>
             </div>
             <div className="InfoAlumno-carrera-general">
               <p className="InfoAlumno-carrera">Carrera:&nbsp;</p>
-              <p className="InfoAlumno-carrera-carreraAlumno">Ingeniería en Sistemas y Graficas Computacionales</p>
+              <p className="InfoAlumno-carrera-carreraAlumno">{item.carrera}</p>
             </div>
-            <div className="InfoAlumno-id-fecha">
-              <div className="InfoAlumno-id-general">
-                <p className="InfoAlumno-id">ID:&nbsp;</p>
-                <p className="InfoAlumno-id-idAlumno">0243793</p>
+            
+              
+              <div  className="InfoAlumno-id-fecha">
+                <div  key={item.id} className="InfoAlumno-id-general">
+                  <p className="InfoAlumno-id">ID:&nbsp;</p>
+                  <p className="InfoAlumno-id-idAlumno">{item.id}</p>
+                </div>
+                <div className="InfoAlumno-fecha-general">
+                  <p className="InfoAlumno-fecha">Fecha:&nbsp;</p>
+                  <p className="InfoAlumno-fecha-fecha">{item.fecha}</p>
+                </div>
               </div>
-              <div className="InfoAlumno-fecha-general">
-                <p className="InfoAlumno-fecha">Fecha:&nbsp;</p>
-                <p className="InfoAlumno-fecha-fecha">29/07/2021</p>
-              </div>
-            </div>
+              
+            
           </div>
+          
           <div className="Caracter-general">
             <div className="Caracter-info-img">
               <div className="Caracter-info">
@@ -323,6 +345,7 @@ function Reportes() {
         </div>
 
       </div>
+      ))}
     </div>
   )
 }
