@@ -4,6 +4,9 @@
         "nombre":"Braulio Ivan Solorio Goméz",
         "sexo":"Masculino",
         "carrera":"Ingeniería en Sistemas y Graficas Computacionales",
-        "fecha":"29/07/2021"
+        "fecha":"29/07/2021",
+        "caracter":"INALTERABLE",
+        "caracterDesc":"Se le facilita adaptarse a diversas circunstancias, disposición en las tareas que se le designen y ser sociable",
+        "caracterImg":"inalterable"
     }
 ]

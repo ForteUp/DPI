@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import "./Reportes.css";
 import LogoUp from "./img/LogoUniversidad.png";
-import ImgCaracter from "./img/inalterable 2.png";
+//import ImgCaracter from "./img/inalterable 2.png";
 import Medio from "./img/Medio.png";
 import Conocimiento from "./img/Vector.png";
 import Material from "./img/Vector (1).png";
@@ -27,6 +27,10 @@ import Ayuda4 from "./img/ayuda9.png";
 import Ayuda5 from "./img/ayuda11.png";
 import Velocidad from "./img/alta 1.png";
 import Comprension from "./img/baja 1.png";
+
+let caracter = {
+  "inalterable":"./img/inalterable 2.png"
+}
 
 function useAlumno(){
   const [alumno, setAlumno] = useState([]);
@@ -95,10 +99,10 @@ function Reportes() {
           <div className="Caracter-general">
             <div className="Caracter-info-img">
               <div className="Caracter-info">
-                <p className="Caracter-info-tipo">INALTERABLE</p>
-                <p className="Caracter-info-descripcion">Se le facilita adaptarse a diversas circunstancias, disposición en las tareas que se le designen y ser sociable</p>
+                <p className="Caracter-info-tipo">{item.caracter}</p>
+                <p className="Caracter-info-descripcion">{item.caracterDesc}</p>
               </div>
-              <img src={ImgCaracter} alt="" className="Caracter-img" />
+              <img src={caracter[item.caracterImg]} alt='' className="Caracter-img" />
             </div>
           </div>
         </div>
