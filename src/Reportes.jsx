@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import "./Reportes.css";
 import LogoUp from "./img/LogoUniversidad.png";
-//import ImgCaracter from "./img/inalterable 2.png";
 import Medio from "./img/Medio.png";
 import Conocimiento from "./img/Vector.png";
 import Material from "./img/Vector (1).png";
@@ -29,7 +28,13 @@ import Velocidad from "./img/alta 1.png";
 import Comprension from "./img/baja 1.png";
 
 let caracter = {
-  "inalterable":"./img/inalterable 2.png"
+  inalterable:"./img/inalterable 2.png"
+}
+
+let valores ={
+  bajo:"./img/Baja.png",
+  medio:"./img/Medio.png",
+  alto:"./img/Alta.png"
 }
 
 function useAlumno(){
@@ -102,7 +107,7 @@ function Reportes() {
                 <p className="Caracter-info-tipo">{item.caracter}</p>
                 <p className="Caracter-info-descripcion">{item.caracterDesc}</p>
               </div>
-              <img src={caracter[item.caracterImg]} alt='' className="Caracter-img" />
+              <img src={require(`${caracter[item.caracterImg]}`)} alt='' className="Caracter-img" />
             </div>
           </div>
         </div>
@@ -123,7 +128,7 @@ function Reportes() {
                   <p className="Conocimiento-titulo">Conocimiento</p>
                 </div>
                 <div className="Conocimiento-quantity-general">
-                  <img src={Medio} alt="" className="Conocimiento-grafic"/>
+                  <img src={require(`${valores[item.conocimiento]}`)} alt="" className="Conocimiento-grafic"/>
                   <p className="Conocimiento-quantity">Medio</p>
                 </div>
               </div>

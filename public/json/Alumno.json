@@ -7,6 +7,13 @@
         "fecha":"29/07/2021",
         "caracter":"INALTERABLE",
         "caracterDesc":"Se le facilita adaptarse a diversas circunstancias, disposición en las tareas que se le designen y ser sociable",
-        "caracterImg":"inalterable"
+        "caracterImg":"inalterable",
+        "conocimiento": "medio",
+        "SPM":"medio",
+        "CyA":"medio",
+        "Ayuda":"medio",
+        "SyR":"bajo",
+        "NyC":"alto",
+        "SyD":"medio"
     }
 ]
