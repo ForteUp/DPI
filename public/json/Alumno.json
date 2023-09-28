@@ -8,12 +8,12 @@
         "caracter":"INALTERABLE",
         "caracterDesc":"Se le facilita adaptarse a diversas circunstancias, disposición en las tareas que se le designen y ser sociable",
         "caracterImg":"inalterable",
-        "conocimiento": "medio",
-        "SPM":"medio",
-        "CyA":"medio",
-        "Ayuda":"medio",
-        "SyR":"bajo",
-        "NyC":"alto",
-        "SyD":"medio"
+        "conocimiento": "Medio",
+        "SPM":"Medio",
+        "CyA":"Medio",
+        "Ayuda":"Medio",
+        "SyR":"Bajo",
+        "NyC":"Alto",
+        "SyD":"Medio"
     }
 ]

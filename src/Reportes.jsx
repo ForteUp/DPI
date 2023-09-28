@@ -7,7 +7,6 @@ import Material from "./img/Vector (1).png";
 import Arte from "./img/Vector (2).png";
 import Ayuda from "./img/Vector (3).png";
 import Status from "./img/license.png";
-import Bajo from "./img/Baja.png";
 import Normas from "./img/checkbox-multiple-marked-circle-outline.png";
 import Salud from "./img/heart-multiple-outline.png";
 import Alta from "./img/Alta.png";
@@ -32,9 +31,9 @@ let caracter = {
 }
 
 let valores ={
-  bajo:"./img/Baja.png",
-  medio:"./img/Medio.png",
-  alto:"./img/Alta.png"
+  Bajo:"./img/Baja.png",
+  Medio:"./img/Medio.png",
+  Alto:"./img/Alta.png"
 }
 
 function useAlumno(){
@@ -129,7 +128,7 @@ function Reportes() {
                 </div>
                 <div className="Conocimiento-quantity-general">
                   <img src={require(`${valores[item.conocimiento]}`)} alt="" className="Conocimiento-grafic"/>
-                  <p className="Conocimiento-quantity">Medio</p>
+                  <p className="Conocimiento-quantity">{item.conocimiento}</p>
                 </div>
               </div>
               <p className="Top-conocimiento-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
@@ -145,8 +144,8 @@ function Reportes() {
                   <p className="Material-titulo">Sentido Practico Material</p>
                 </div>
                 <div className="Material-quantity-general">
-                  <img src={Medio} alt="" className="Material-grafic"/>
-                  <p className="Material-quantity">Medio</p>
+                  <img src={require(`${valores[item.SPM]}`)} alt="" className="Material-grafic"/>
+                  <p className="Material-quantity"> {item.SPM} </p>
                 </div>
               </div>
               <p className="Top-material-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
@@ -162,8 +161,8 @@ function Reportes() {
                   <p className="Arte-titulo">La Cultura y El Arte</p>
                 </div>
                 <div className="Arte-quantity-general">
-                  <img src={Medio} alt="" className="Arte-grafic"/>
-                  <p className="Arte-quantity">Medio</p>
+                  <img src={require(`${valores[item.CyA]}`)} alt="" className="Arte-grafic"/>
+                  <p className="Arte-quantity"> {item.CyA} </p>
                 </div>
               </div>
               <p className="Top-arte-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
@@ -179,8 +178,8 @@ function Reportes() {
                   <p className="Ayuda-titulo">Ayuda a Otros</p>
                 </div>
                 <div className="Ayuda-quantity-general">
-                  <img src={Medio} alt="" className="Ayuda-grafic"/>
-                  <p className="Ayuda-quantity">Medio</p>
+                  <img src={require(`${valores[item.Ayuda]}`)} alt="" className="Ayuda-grafic"/>
+                  <p className="Ayuda-quantity"> {item.Ayuda} </p>
                 </div>
               </div>
               <p className="Top-ayuda-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
@@ -195,8 +194,8 @@ function Reportes() {
                     <p className="Status-titulo">Status y Reconocimiento</p>
                   </div>
                   <div className="Status-quantity-general">
-                    <img src={Bajo} alt="" className="Status-grafic"/>
-                    <p className="Status-quantity">Bajo</p>
+                    <img src={require(`${valores[item.SyR]}`)} alt="" className="Status-grafic"/>
+                    <p className="Status-quantity"> {item.SyR} </p>
                   </div>
               </div>
               <p className="Top-Status-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
