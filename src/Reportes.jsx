@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import "./Reportes.css";
 import LogoUp from "./img/LogoUniversidad.png";
-import Medio from "./img/Medio.png";
 import Conocimiento from "./img/Vector.png";
 import Material from "./img/Vector (1).png";
 import Arte from "./img/Vector (2).png";
@@ -9,7 +8,6 @@ import Ayuda from "./img/Vector (3).png";
 import Status from "./img/license.png";
 import Normas from "./img/checkbox-multiple-marked-circle-outline.png";
 import Salud from "./img/heart-multiple-outline.png";
-import Alta from "./img/Alta.png";
 import ImgCaracter2 from "./img/reflexivo-teorico 1.png";
 import Estudio from "./img/estudio1.png";
 import Estudio2 from "./img/estudio2.png";
@@ -209,8 +207,8 @@ function Reportes() {
                     <p className="Calidad-titulo">Normas y Calidad</p>
                   </div>
                   <div className="Calidad-quantity-general">
-                    <img src={Alta} alt="" className="Calidad-grafic"/>
-                    <p className="Calidad-quantity">Alto</p>
+                    <img src={require(`${valores[item.NyC]}`)} alt="" className="Calidad-grafic"/>
+                    <p className="Calidad-quantity"> {item.NyC} </p>
                   </div>
               </div>
               <p className="Top-calidad-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
@@ -224,8 +222,8 @@ function Reportes() {
                   <p className="Salud-titulo">Salud y Deporte</p>
                 </div>
                 <div className="Salud-quantity-general">
-                  <img src={Medio} alt="" className="Salud-grafic"/>
-                  <p className="Salud-quantity">Medio</p>
+                  <img src={require(`${valores[item.SyD]}`)} alt="" className="Salud-grafic"/>
+                  <p className="Salud-quantity"> {item.SyD} </p>
                 </div>
               </div>
               <p className="Top-salud-info">Preferencia por todo lo referente al conocimiento, la verdad de las cosas y la ciencia</p>
