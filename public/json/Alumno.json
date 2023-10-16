@@ -14,6 +14,23 @@
         "Ayuda":"Medio",
         "SyR":"Bajo",
         "NyC":"Alto",
-        "SyD":"Medio"
+        "SyD":"Medio",
+        "caracter2":"REFLEXIVO - TEÓRICO",
+        "caracterDesc2":"Tiende a la objetividad, a considerarlas experiencias y observarlas desde diferentes ángulos. Reúne datos y los analiza metódicamente antes de llegar",
+        "caracterImg2":"reflexivo_teorico",
+        "ME_1":"explorar",
+        "ME_1 Desc":"Explorar contenido general",
+        "ME_2":"leer",
+        "ME_2 Desc":"Leer con detenimiento",
+        "ME_3":"subrayar",
+        "ME_3 Desc":"Subrayar Puntos Importantes",
+        "ME_4":"detectar",
+        "ME_4 Desc":"Detectar Ideas",
+        "ME_5":"memorizar",
+        "ME_5 Desc":"Memorizar contenido",
+        "ME_6":"repetir",
+        "ME_6 Desc":"Repetir lo estudiado",
+        "ME_7":"sintetizar",
+        "ME_7 Desc":"Sintetizar la información"
     }
 ]

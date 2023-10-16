@@ -8,9 +8,6 @@ import Ayuda from "./img/Vector (3).png";
 import Status from "./img/license.png";
 import Normas from "./img/checkbox-multiple-marked-circle-outline.png";
 import Salud from "./img/heart-multiple-outline.png";
-import ImgCaracter2 from "./img/reflexivo-teorico 1.png";
-import Estudio from "./img/estudio1.png";
-import Estudio2 from "./img/estudio2.png";
 import Estudio3 from "./img/estudio3.png";
 import Estudio4 from "./img/estudio4.png";
 import Estudio5 from "./img/estudio5.png";
@@ -25,13 +22,19 @@ import Velocidad from "./img/alta 1.png";
 import Comprension from "./img/baja 1.png";
 
 let caracter = {
-  inalterable:"./img/inalterable 2.png"
+  inalterable:"./img/inalterable 2.png",
+  reflexivo_teorico:"./img/reflexivo-teorico 1.png"
 }
 
 let valores ={
   Bajo:"./img/Baja.png",
   Medio:"./img/Medio.png",
   Alto:"./img/Alta.png"
+}
+
+let metodos = {
+  explorar: "./img/estudio1.png",
+  leer: "./img/estudio2.png"
 }
 
 function useAlumno(){
@@ -237,10 +240,10 @@ function Reportes() {
           {/* Cuadro de cáracter */}
           <div className="Caracter2-general">
             <div className="Caracter2-info-img">
-                <img src={ImgCaracter2} alt="" className="Caracter2-img" />
+                <img src={require(`${caracter[item.caracterImg2]}`)} alt="" className="Caracter2-img" />
                 <div className="Caracter2-info">
-                  <p className="Caracter2-info-tipo">REFLEXIVO - TEÓRICO</p>
-                  <p className="Caracter2-info-descripcion">Tiende a la objetividad, a considerarlas experiencias y observarlas desde diferentes ángulos. Reúne datos y los analiza metódicamente antes de llegar</p>
+                  <p className="Caracter2-info-tipo"> {item.caracter2} </p>
+                  <p className="Caracter2-info-descripcion">{item.caracterDesc2}</p>
                 </div>
             </div>
           </div>
@@ -253,11 +256,11 @@ function Reportes() {
             <div className="Metodos-top">
 
               <div className="Metodos-frame-general">
-                <img src={Estudio} alt="" className="Frame-img" />
+                <img src={require(`${metodos[item.ME_1]}`)} alt="" className="Frame-img" />
                 <p className="Frame-text" style={{width: "269px"}}>Explorar contenido general</p>
               </div>
               <div className="Metodos-frame-general">
-                <img src={Estudio2} alt="" className="Frame-img" />
+                <img src={require(`${metodos[item.ME_2]}`)} alt="" className="Frame-img" />
                 <p className="Frame-text" style={{width: "202px"}}>Leer con detenimiento</p>
               </div>
               <div className="Metodos-frame-general">
